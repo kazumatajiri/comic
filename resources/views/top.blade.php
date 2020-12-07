@@ -1,47 +1,22 @@
-<!DOCTYPE HTML>
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="jp">
   <head>
     <meta charset="UTF-8">
     <title>漫巻検索</title>
-    <!-- Styles -->
-    {{-- Laravel標準で用意されているCSSを読み込みます --}}
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        {{-- この章の後半で作成するCSSを読み込みます --}}
-        <link href="{{ asset('css/top.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/top.css') }}" rel="stylesheet">
   </head>
   <body>
-    <h1>漫巻検索</h1>
-    <table border="1">
-    <a href="https://comic">新規登録</a>
-      <caption>登録漫画一覧</caption>
-      <thead>
-        <tr>
-          <th>作品名</th>
-          <th>作者名</th>
-          <th>掲載雑誌名</th>
-          <th>巻数</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>ワンピース</td>
-          <td>尾田栄一郎</td>
-          <td>週刊少年ジャンプ</td>
-          <td>52巻</td>
-          <td><a href="https://comic">編集</a></td>
-          <td><a href="https://comic">削除</a></td>
-        </tr>
-        <tr>
-          <td>メジャー</td>
-          <td>満田拓也</td>
-          <td>週刊少年サンデー</td>
-          <td>78巻</td>
-          <td><a href="https://comic">編集</a></td>
-          <td><a href="https://comic">削除</a></td>
-        </tr>
-      </tbody>
-      
-    </table>
-    <a href="https://comic">追加</a>
+    <div>
+
+      <h1 class="page-title">漫巻検索</h1>
+      <form id="form2" action="自分のサイトURL" method="get">
+<input id="sbox2"  id="s" name="s" type="text" placeholder="フリーワードを入力"/>
+<button type="submit" id="sbtn2"><i class="fas fa-search"></i></button>
+</form>
+    <a class="circle" href="https://comic">本の追加</a>
+    <a class="circle" href="https://comic">本の更新</a>
+    
+    </div>
+
   </body>
 </html>

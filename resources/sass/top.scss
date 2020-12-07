@@ -1,40 +1,66 @@
 body {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(110, 177, 96);
-  color: #fff;
+  background: #808080;
+  font-family: "ヒラギノ丸ゴシック",sans-serif;
+}
+div{
+  background: #ffffff;
+  width: 800px;
+  padding: 80px;
+  text-align: center;
+  margin: 30px auto;
+  border-radius:30px;
+
+}
+.page-title{
+  position: relative;
+}
+.page-title:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  
+}
+.circle{
+  display: inline-block;
+  width: 80px;
+  height:80px;
+  border-radius: 50%;
+  background: skyblue;
+  text-align:center;
+  line-height: 80px;
 }
 
-.navbar-laravel {
-  background-color: (110, 177, 96);
-  box-shadow: 0 2px 4px rgba(110, 177, 96);
-}
 
-.navbar-brand {
-  color:#fff !important;
-}
-
-.nav-link {
-  color: #fff !important;
-}
-
-.table-dark {
-  color: #fff;
-}
-
-.list-group-item {
-  border-color: #fff;
-  background-color: #000;
-}
-
-.login-box {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.login-header {
-  background-color: rgba(0, 0, 0, 0.25);
-}
-
-.login-boddy {
-  background-color: rgba(0, 0, 0, 0.25);
-}
+#form2{
+  position:relative;
+  max-width:300px;	
+  margin-bottom:20px;
+  }
+  #sbox2{
+  height:50px;
+  padding:0 10px; 
+  position:absolute; 
+  left:0;
+  top:0; 
+  border-radius:2px;
+  outline:0;
+  background:#eee;	
+  }
+  #sbtn2{
+  height:50px;
+  position:absolute; 
+  left:255px;/*アイコン左右の位置調整*/
+  top:0;
+  background:none;
+  color:#666;
+  border:none;
+  font-size:10px;/*アイコンサイズ*/
+  }
+  #sbtn5:hover{
+  color:#7fbfff;
+  }

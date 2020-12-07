@@ -11,13 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('top');
-});
 
-Route::group(['prefix' => 'admin'], function(){
-    Route::get('comics/create','Admin\ComicController@add');
-    Route::post('comics/create','Admin\ComicController@create');
-    Route::get('comics/edit','Admin\ComicController@edit');
-    Route::post('comics/update','Admin\ComicController@update');
+
+Route::group(['prefix' => 'comic'],function(){
+    Route::get('/add','ComicController@add');
+    Route::get('/','ComicController@index');
+    Route::get('/result','ComicController@result');
 });

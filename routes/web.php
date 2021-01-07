@@ -15,6 +15,9 @@
 
 Route::group(['prefix' => 'comic'],function(){
     Route::get('/add','ComicController@add');
+    Route::post('/add','ComicController@add');
     Route::get('/','ComicController@index');
     Route::get('/result','ComicController@result');
+    Route::get('/update','ComicController@update');
+    Route::get('/list','ComicController@list');
 });

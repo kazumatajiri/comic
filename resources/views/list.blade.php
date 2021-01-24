@@ -6,8 +6,8 @@
     <link href="{{ asset('css/list.css') }}" rel="stylesheet">
   </head>
   <body>
-    <h1>コミック作品一覧</h1>
-    <a href="{{ action('ComicController@add')  }}">作品追加</a>
+    <h1>コミック作品一覧</h1><!--テーブルに保存した内容を表示-->
+    <a href="{{ action('ComicController@add')  }}">作品追加</a><!--add.blade.phpへ-->
     <form action="{{ action('ComicController@list') }}" method="get">
       <label class="col-md-2">タイトル</label>
       <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
@@ -26,5 +26,6 @@
           </thead>
       </table>
     </form>
+    <a>トップページへ</a><!--top.blade.phpへ-->
   </body>
 

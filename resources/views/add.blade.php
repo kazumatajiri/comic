@@ -7,6 +7,7 @@
   </head>
   <body>
     <section class="content">
+      <form action="{{ action('ComicController@create') }}"method="post"enctype="multipart/form-data">
       <h1 class="page-title">本の追加</h1>
       @if (count($errors) > 0)
           <ul>
@@ -15,18 +16,17 @@
               @endforeach
           </ul>
       @endif
-      <form>
         <p>
           <label for="title">作品名</label>
-          <input type="text" id="title">
+          <input type="text" name="title">
         </p>
         <p>
           <label for="author">作者名</label>
-          <input type="text" id="author">
+          <input type="text" name="author">
         </p>
         <p>
           <label for="publisher">出版社</label>
-          <input type="text" list="company"placeholder="テキスト入力もしくはダブルクリック" autocomplete="off" id="publisher">
+          <input type="text" list="company"placeholder="テキスト入力もしくはダブルクリック" autocomplete="off" name="publisher">
           <datalist id="company">
             <option value="週刊少年ジャンプ">
             <option value="週刊少年マガジン">
@@ -36,14 +36,15 @@
         </p>
         <p>
           <label for="number">巻数</label>
-          <input type="text" id="number">
+          <input type="text" name="number">
         </p>
         <p>
           <label for="favorite">おすすめ度</label>
-          <input type="text" id="favorite">
+          <input type="text" name="favorite">
         </p>
+        {{ csrf_field() }}
         <p>
-          <input type="submit" value="追加">
+          <input type="submit" value="追加"><!--追加してtop.blade.phpに戻る--><!--comicテーブルに保存-->
         </p>
       </form>
     </body>

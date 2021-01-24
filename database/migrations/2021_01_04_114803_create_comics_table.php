@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddComicTable extends Migration
+class CreateComicsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddComicTable extends Migration
      */
     public function up()
     {
-        Schema::create('comic', function(Blueprint $table) {
+        Schema::create('comics', function(Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('author');
@@ -33,6 +33,6 @@ class AddComicTable extends Migration
      */
     public function down()
     {
-        Schema::dropIFExists('comic');
+        Schema::dropIFExists('comics');
     }
 }

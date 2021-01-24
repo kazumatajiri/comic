@@ -49726,6 +49726,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/listplus.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/listplus.scss ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/result.scss":
 /*!************************************!*\
   !*** ./resources/sass/result.scss ***!
@@ -49760,9 +49771,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!**********************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/top.scss ./resources/sass/add.scss ./resources/sass/result.scss ./resources/sass/update.scss ./resources/sass/list.scss ***!
-  \**********************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/top.scss ./resources/sass/add.scss ./resources/sass/result.scss ./resources/sass/update.scss ./resources/sass/list.scss ./resources/sass/listplus.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49773,7 +49784,8 @@ __webpack_require__(/*! /Users/tajirikazuma/mynews/resources/sass/top.scss */"./
 __webpack_require__(/*! /Users/tajirikazuma/mynews/resources/sass/add.scss */"./resources/sass/add.scss");
 __webpack_require__(/*! /Users/tajirikazuma/mynews/resources/sass/result.scss */"./resources/sass/result.scss");
 __webpack_require__(/*! /Users/tajirikazuma/mynews/resources/sass/update.scss */"./resources/sass/update.scss");
-module.exports = __webpack_require__(/*! /Users/tajirikazuma/mynews/resources/sass/list.scss */"./resources/sass/list.scss");
+__webpack_require__(/*! /Users/tajirikazuma/mynews/resources/sass/list.scss */"./resources/sass/list.scss");
+module.exports = __webpack_require__(/*! /Users/tajirikazuma/mynews/resources/sass/listplus.scss */"./resources/sass/listplus.scss");
 
 
 /***/ })

@@ -18,4 +18,5 @@ mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/add.scss','public/css')
    .sass('resources/sass/result.scss','public/css')
    .sass('resources/sass/update.scss','public/css')
-   .sass('resources/sass/list.scss','public/css');
+   .sass('resources/sass/list.scss','public/css')
+   .sass('resources/sass/listplus.scss','public/css');

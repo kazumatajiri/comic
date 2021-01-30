@@ -18,8 +18,8 @@
       </div>
           </form>
         <p>
-            <a class="add_btn"href="https://comic">本の追加<a><!--add.blade.phpへ-->
-            <a class="update_btn" href="https://comic">作品一覧</a><!--list.blade.phpへ-->
+            <a class="add_btn"href="http://127.0.0.1:8000/comic/add">本の追加<a><!--add.blade.phpへ-->
+            <a class="update_btn" href="http://127.0.0.1:8000/comic/list">作品一覧</a><!--list.blade.phpへ-->
         </p>
     </section>
     </body>

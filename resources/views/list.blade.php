@@ -24,8 +24,21 @@
               <th width="20%">おすすめ度</th>
             </tr>
           </thead>
+          <tbody>
+            @foreach($posts as $comic)
+                  <tr>
+                    <th>{{ $comic->id }}</th>
+                    <td>{{ str_limit($comic->title, 100) }}</td>
+                    <td>{{ str_limit($comic->author, 250) }}</td>
+                    <td>{{ str_limit($comic->publisher, 250) }}</td>
+                    <td>{{ str_limit($comic->number, 250) }}</td>
+                    <td>{{ str_limit($comic->favorite, 250) }}</td>
+                  </tr>
+            @endforeach
+          </tbody>
       </table>
     </form>
-    <a>トップページへ</a><!--top.blade.phpへ-->
+    <a href="{{action('ComicController@edit', ['id' => $comic->id]) }}">編集</a>
+    <a>トップページへ</a><!--top.blade.phpへ--></a>
   </body>
 

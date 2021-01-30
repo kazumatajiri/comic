@@ -20,5 +20,9 @@ Route::group(['prefix' => 'comic'],function(){
     Route::get('/update','ComicController@update');
     Route::get('/list','ComicController@list');
     Route::get('/listplus','ComicController@plus');
+    Route::get('/','ComicController@top');
+    Route::get('/list','ComicController@edit')->middleware('auth');
+    Route::post('/list','ComicController@update')->middleware('auth');
+    Route::get('/listplus','ComicController@delete')->middleware('auth');
 
 });

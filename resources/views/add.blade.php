@@ -44,7 +44,7 @@
         </p>
         {{ csrf_field() }}
         <p>
-          <input type="submit" value="追加"><!--追加してtop.blade.phpに戻る--><!--comicテーブルに保存-->
+          <input type="submit" value="追加"><!--追加してtop.blade.phpに戻る--><!--comicsテーブルに保存-->
         </p>
       </form>
     </body>
